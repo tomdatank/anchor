@@ -10,6 +10,7 @@ export default function Nav({ session }) {
             <Link to="/">Dashboard</Link>
             <Link to="/goals">Goals</Link>
             <Link to="/journal">Journal</Link>
+            <Link to="/ai-session">AI Session</Link>
             <span style={{ marginLeft: 'auto', fontSize: 14, color: '#888' }}>
                 {session.user.email}
                 <button onClick={signOut} style={{ marginLeft: 12 }}>Sign out</button>

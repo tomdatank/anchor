@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../supabase'
 
+
+
 const CATEGORIES = ['health', 'career', 'academic', 'financial', 'social', 'creative', 'personal_growth', 'other']
 const TYPES = ['long_term', 'short_term', 'daily_habit']
 

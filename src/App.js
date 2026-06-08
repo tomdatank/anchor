@@ -6,6 +6,7 @@ import Nav from './components/Nav'
 import Dashboard from './pages/Dashboard'
 import Goals from './pages/Goals'
 import Journal from './pages/Journal'
+import AiSession from './pages/AiSession'
 
 function App() {
   const [session, setSession] = useState(null)
@@ -32,6 +33,7 @@ function App() {
         <Route path="/" element={<Dashboard session={session} />} />
         <Route path="/goals" element={<Goals session={session} />} />
         <Route path="/journal" element={<Journal session={session} />} />
+        <Route path="/ai-session" element={<AiSession session={session} />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>

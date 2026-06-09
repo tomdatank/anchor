@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard'
 import Goals from './pages/Goals'
 import Journal from './pages/Journal'
 import AiSession from './pages/AiSession'
+import RecurringTasks from './pages/RecurringTasks'
 
 function App() {
   const [session, setSession] = useState(null)
@@ -34,6 +35,7 @@ function App() {
         <Route path="/goals" element={<Goals session={session} />} />
         <Route path="/journal" element={<Journal session={session} />} />
         <Route path="/ai-session" element={<AiSession session={session} />} />
+        <Route path="/recurring" element={<RecurringTasks session={session} />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
